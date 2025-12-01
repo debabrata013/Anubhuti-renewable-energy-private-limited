@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
+import Image from "next/image"
+
 const newsCards = [
   {
     id: 1,
@@ -55,7 +57,14 @@ export default function InTheNews() {
                 key={card.id}
                 className="flex-shrink-0 w-96 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
               >
-                <img src={card.image || "/placeholder.svg"} alt={card.headline} className="w-full h-48 object-cover" />
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={card.image || "/placeholder.svg"}
+                    alt={card.headline}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <div className="p-6">
                   <p className="text-sm font-semibold text-gray-500 mb-2">{card.source}</p>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">{card.headline}</h3>
