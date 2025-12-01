@@ -3,44 +3,53 @@
 import Image from "next/image"
 import { useState } from "react"
 
+import gallery1 from "@/public/gallery-Bifacial-Solar-Modules-Explained-_1_.jpeg"
+import gallery2 from "@/public/gallery-Bifacial-Solar-Modules-Explained.jpeg"
+import gallery3 from "@/public/gallery-Eco-friendly-Quotes-for-Bifacial-Solar-Modules.jpeg"
+import gallery4 from "@/public/gallery-Legga-Village-Solar-Electrification.jpeg"
+import gallery5 from "@/public/gallery-This-is-what-energy-independence-looks-like_-Rows….jpeg"
+import gallery6 from "@/public/gallery-Power-Quality-Analysis-Bifacial-Solar-Modules.jpeg"
+import gallery7 from "@/public/gallery-Nimbus-Solar-Solution.jpeg"
+import gallery8 from "@/public/gallery-India-Cleaner-Future.jpeg"
+
 const galleryImages = [
   {
-    src: "/gallery-Bifacial-Solar-Modules-Explained-_1_.jpeg",
+    src: gallery1,
     alt: "Bifacial Solar Modules Explained",
     title: "Advanced Bifacial Technology"
   },
   {
-    src: "/gallery-Bifacial-Solar-Modules-Explained.jpeg",
+    src: gallery2,
     alt: "Bifacial Solar Modules",
     title: "High-Efficiency Solar Solutions"
   },
   {
-    src: "/gallery-Eco-friendly-Quotes-for-Bifacial-Solar-Modules.jpeg",
+    src: gallery3,
     alt: "Eco-friendly Solar",
     title: "Sustainable Energy Future"
   },
   {
-    src: "/gallery-Legga-Village-Solar-Electrification.jpeg",
+    src: gallery4,
     alt: "Village Solar Electrification",
     title: "Rural Electrification Project"
   },
   {
-    src: "/gallery-This-is-what-energy-independence-looks-like_-Rows….jpeg",
+    src: gallery5,
     alt: "Energy Independence",
     title: "Energy Independence Solutions"
   },
   {
-    src: "/gallery-Power-Quality-Analysis-Bifacial-Solar-Modules.jpeg",
+    src: gallery6,
     alt: "Power Quality Analysis",
     title: "Advanced Power Analysis"
   },
   {
-    src: "/gallery-Nimbus-Solar-Solution.jpeg",
+    src: gallery7,
     alt: "Nimbus Solar Solution",
     title: "Nimbus Solar Technology"
   },
   {
-    src: "/gallery-India-Cleaner-Future.jpeg",
+    src: gallery8,
     alt: "India Cleaner Future",
     title: "Clean Energy for India"
   }

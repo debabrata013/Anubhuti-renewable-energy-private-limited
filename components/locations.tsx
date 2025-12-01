@@ -1,5 +1,6 @@
 import { MapPin, Users, Building, Zap } from "lucide-react"
 import Image from "next/image"
+import indiaMap from "@/public/india-map.jpg"
 
 const locations = [
   {
@@ -41,7 +42,7 @@ export default function Locations() {
         <div className="mb-16 grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/india-map.jpg"
+              src={indiaMap}
               alt="India Map - AR Energy Coverage"
               width={600}
               height={400}
