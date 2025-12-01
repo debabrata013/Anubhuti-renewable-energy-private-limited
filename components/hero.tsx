@@ -1,6 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import heroBg1 from "@/public/solar-hero-bg.jpg"
+import heroBg2 from "@/public/solar-hero-2.jpg"
+import heroBg3 from "@/public/solar-hero-3.jpg"
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -10,19 +13,19 @@ export default function Hero() {
       title: "Harness the Power of the Sun",
       subtitle: "Transform your energy future with clean, renewable solar plants by AR Energy",
       cta: "Get Free Solar Quote",
-      bg: "/solar-hero-bg.jpg"
+      bg: heroBg1
     },
     {
       title: "Industrial Solar Plants",
       subtitle: "High-efficiency solar plant solutions for factories and industrial complexes",
       cta: "Learn More",
-      bg: "/solar-hero-2.jpg"
+      bg: heroBg2
     },
     {
       title: "Commercial Solar Parks",
       subtitle: "Large-scale solar plant installations for commercial sustainability and savings",
       cta: "Calculate ROI",
-      bg: "/solar-hero-3.jpg"
+      bg: heroBg3
     }
   ]
 
@@ -42,7 +45,7 @@ export default function Hero() {
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           style={{
-            backgroundImage: `url("${slide.bg}")`,
+            backgroundImage: `url("${slide.bg.src}")`,
             backgroundPosition: "center",
           }}
         />
